@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Quantos Jogadores: " />
+
+    <RadioGroup
+        android:id="@+id/opcaoJogadoresRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/doisRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Dois" />
+
+        <RadioButton
+            android:id="@+id/tresRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Três" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/jogadaComputadorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="@string/jogador1" />
+
+
+    <ImageView
+        android:id="@+id/jogadaComputadorIv"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"/>
+
+    <TextView
+        android:id="@+id/jogadaComputador2Tv"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="@string/jogador2" />
+
+    <ImageView
+        android:id="@+id/jogadaComputador2Iv"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/pedraBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/pedra"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/papelBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/papel"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="1" />
+
+
+        <ImageButton
+            android:id="@+id/tesouraBt"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/tesoura"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="2" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/resultadoTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="" />
+
+
+</LinearLayout>
+
