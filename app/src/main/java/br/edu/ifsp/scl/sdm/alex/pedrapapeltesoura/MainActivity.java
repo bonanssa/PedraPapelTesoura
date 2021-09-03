@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     (jogadaUsuario == "papel" && jMaquina1 == "pedra" && jMaquina2 == "pedra") ||
                     (jogadaUsuario == "tesoura" && jMaquina1 == "papel" && jMaquina2 =="papel")) {
 
-                activityMainBinding.resultadoTV.setText("Vencedor: Você Ganhou");
+                activityMainBinding.resultadoTV.setText("Vencedor: Você Ganhou :)");
 
 
             }else{

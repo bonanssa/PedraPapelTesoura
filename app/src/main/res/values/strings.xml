@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">PedraPapelTesoura</string>
     <string name="jogador1">Computador 1</string>
-    <string name="jogador2">Computador 1</string>
+    <string name="jogador2">Computador 2</string>
 </resources>
